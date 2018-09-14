@@ -1,0 +1,154 @@
+/*
+ * @Author: Mohammad M. AlBanna
+ * Copyright © 2018 Jungle Scout
+*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body{
+	background-color: #f5f7f8 !important;
+	margin: 0px;
+	padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans-Regular.otf);
+}
+
+@font-face {
+    font-family: WorkSansSemiBold;
+    src: url(../fonts/WorkSans-SemiBold.otf);
+}
+
+.top-menu-bar{
+    display: block;
+    height: 50px;
+    background: linear-gradient(to bottom, #ff9c00 0%, #ff9100 100%);
+    padding: 10px 0px;
+}
+
+.top-menu-bar .left-bar{
+    width: 940px;
+    margin: auto;
+}
+
+.left-bar img{
+    height: 30px;
+}
+
+.screenshot-container{
+    text-align: center;
+}
+
+.screenshot-container h2{
+    font-family: WorkSansSemiBold;
+    letter-spacing: -0.2px;
+    margin: 0px 0px 10px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #516670;
+}
+
+.screenshot-container p{
+    font-family: WorkSans;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #516670;
+    margin: 0px;
+}
+
+.instructions-box{
+    border-radius: 1px;
+    background-color: #ffffff;
+    border: solid 1px #cfd8dc;
+    display: inline-block;
+    width: 940px;
+    text-align: left;
+    padding: 15px;
+    margin: 25px;
+}
+
+.instructions-links{
+    margin-top: 16px;
+}
+
+.instructions-links .links-box{
+    display: inline-block;
+    width: 450px;
+}
+
+.links-box ul, .links-box li{
+    color: #516670;
+    margin: 0px;
+}
+
+.links-box ul{
+    padding-left: 30px;
+}
+
+.links-box a{
+    font-family: WorkSansSemiBold;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+    color: #516670;
+}
+
+.screenshot-image{
+	text-align: center;
+}
+
+.screenshot-image img{
+	display: inline-block;
+}
+
+.download-section{
+    width: 940px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    border: solid 1px #cfd8dc;
+    display: inline-block;
+    height: 60px;
+    padding: 15px;
+    margin: 30px 0px;
+}
+
+#submit{
+    border-radius: 2px;
+    width: 250px;
+    height: 30px;
+    border: solid 1.5px #ff9100;
+    padding: 6px 10px;
+    font-family: WorkSansSemiBold;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #ff9100;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#submit:hover{
+    background-color: rgba(255, 145, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+}

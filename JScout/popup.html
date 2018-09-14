@@ -1,0 +1,77 @@
+<!-- 
+    @Author: Mohammad M. AlBanna
+    Copyright © 2018 Jungle Scout
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="js/libraries/jquery.js"></script>
+		<script src="js/popup.js"></script>
+		<link rel="stylesheet" href="css/popup.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body class="popup">
+    	<section class="container">
+    		<!-- Start the header section -->
+		    <header class="header">
+		        <!-- Start The Top Bar -->
+				<div class="top-menu-bar">
+					<div class="left-bar">
+						<a><img src="images/icons/menu-deactive.png" /></a>
+						<a href="https://www.junglescout.com/"><img id="jsProLogoTopBar" src="images/js-logo-top-menu.png" /></a>
+					</div>
+
+					<div class="right-bar">
+						<a href="#" id=refreshBtn><img src="images/icons/refresh-active.png" /></a>
+						<a href="#" id="closeBtn"><img src="images/icons/white-cross.png" /></a>
+					</div>
+				</div>
+				<!-- End the top bar -->
+		    </header>
+		    <!-- End the header section -->
+
+			<!-- Start the main screen -->
+	        <div class="main-screen">
+	            <!-- Start no products section -->
+	            <div class="js-no-products">
+	                <h2>There’s nothing to display</h2>
+	                <p>The Chrome Extension can only display data for specific Amazon pages. Why not perform a search on one of the pages listed below.</p>
+	                <div class="js-search-pages">
+	                    <div class="js-search-results-page-col">
+	                        <img class="js-search-results-page-img" src="images/amazon-search-result-page.jpg" alt="Amazon Search Results" />
+	                        <p>1. Amazon Search Results</p>
+	                        <p>You can run the Chrome Extension against any Amazon search results page. Just enter a product or keyword into Amazon’s search bar and wait for the results to be displayed. Once there you are good to go!</p>
+	                    </div>
+	                    <div class="js-listing-page-img-col">
+	                        <img class="js-listing-page-img" src="images/amazon-product-listing-page.jpg" alt="Amazon Product Listings" />
+	                        <p>2. Amazon Product Listings</p>
+	                        <p>For a more in depth look at a specific product you can run the Chrome Extension against an Amazon Product Listing page. This page can be accessed by selecting a product item from the Amazon search results page.</p>
+	                    </div>
+	                </div>
+	                <p>The Chrome Extension will also collect data from <b>Amazon’s Wish Lists, Seller, Seller Storefront</b> and <b>Buying Guide pages</b></p>
+	            </div>
+	            <!-- End no products section -->
+
+	        	<div class="request-access">
+	        		<img src="images/request-access.png" />
+	        		<h2>Heads up!</h2>
+	        		<p>For Jungle Scout to function normally on Amazon <span id="accessName"> Store</span>, it requires some extra permissions.</p>
+	        		<a id="submitAccess" href="#" /><span>Click here for instant access! <i class="right-arrow"></i></span></a>
+	        	</div>
+	       	</div>
+	       	<!-- End the main screen -->
+			
+			<!-- Start the footer section -->
+		    <footer class="footer">
+		    	<a href="#">Extract Next Page &#x2023;</a>
+				<div>
+					<a href="#"><img src="images/icons/word-cloud-active.png" /></a>
+					<a href="#"><img src="images/icons/trend-button.png" /></a>
+					<a href="#"><img src="images/icons/share-button.png" /></a>
+				</div>
+		    </footer>
+		    <!-- End the footer section -->
+		</section>
+	</body>
+</html>
