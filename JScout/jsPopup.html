@@ -1,0 +1,187 @@
+<!-- 
+    @Author: Mohammad M. AlBanna
+    Copyright © 2018 Jungle Scout
+-->
+
+<section class="container">
+    <!-- Start The Top Bar -->
+    <div class="top-menu-bar">
+        <div class="left-bar">
+            <a href="#" id="drawerMenu"><img src="" /></a>
+            <a href="https://www.junglescout.com/"><img id="jsProLogoTopBar" src="" /></a>
+        </div>
+
+        <div class="right-bar">
+            <a href="#" id="refreshJsPopup"><img src="" width="17px" height="17px" /></a>
+            <a href="#" id="closeJsPopup"><img src="" width="15px" height="15px" /></a>
+        </div>
+    </div>
+    <!-- End the top bar -->
+
+    <!-- Start the header section -->
+    <header class="header">
+        <div class="summary-container">
+            <span class="summary-title">Average Monthly Sales</span>
+            <span class="summary-result js-avg-sales"><i class="none-info">--</i></span>
+        </div>
+
+        <div class="summary-container">
+            <span class="summary-title">Average Sales Rank</span>
+            <span class="summary-result js-avg-sales-rank"><i class="none-info">--</i></span>
+        </div>
+
+        <div class="summary-container">
+            <span class="summary-title">Average Price</span>
+            <span class="summary-result js-avg-price"><i class="none-info">--</i></span>
+        </div>
+
+        <div class="summary-container">
+            <span class="summary-title">Average Reviews</span>
+            <span class="summary-result js-avg-reviews"><i class="none-info">--</i></span>
+        </div>
+    </header>
+    <!-- End the header section -->
+
+    <!-- Start content table section -->
+    <div class="content-table">
+        <table id="js-table" class="tablesorter" data-firstRow="" data-searchTerm="" data-extractUrl="">
+            <thead>
+                <tr>
+                    <th data-tooltip="Rank in the search results" class="js-number sorter-digit">#</th>
+                    <th data-tooltip="Click the plus sign below to add this product to your tracker inside of the web app" class="js-more sorter-false csv-hiddenable screenshot-hiddenable">Add</th>
+                    <th class="js-product-name sorter-text screenshot-hiddenable">Product Name</th>
+                    <th class="js-brand sorter-text screenshot-hiddenable">Brand</th>
+                    <th data-tooltip="The current price in the buy box" class="js-price sorter-currency">Price</th>
+                    <th data-tooltip="The listings parent category" class="js-category sorter-text screenshot-hiddenable">Category</th>
+                    <th data-tooltip="The best sellers rank in the parent category" class="js-rank sorter-rank">Rank</th>
+                    <th data-tooltip="30 Day Unit Sales Estimate" class="js-est-sales sorter-digit">Sales</th>
+                    <th data-tooltip="30 Day Revenue Estimate" class="js-est-revenue sorter-currency">Revenue</th>
+                    <th data-tooltip="The number of reviews that have been left on this listing" class="js-reviews sorter-digit">Reviews</th>
+                    <th data-tooltip="The average review star rating" class="js-rating sorter-digit">Rating</th>
+                    <th data-tooltip="The type of seller that currently controls the buy box" class="js-bb-seller sorter-text toLeftToolTip">Seller</th>
+                    <th class="js-asin sorter-false hidden hiddenable">ASIN</th> <!-- for CSV -->
+                    <th class="js-link sorter-false hidden hiddenable">Link</th> <!-- for CSV -->
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <!-- Start the main screen -->
+        <div class="main-screen">
+            <!-- Start no products section -->
+            <div class="js-no-products">
+                <h2>There’s nothing to display</h2>
+                <p>The Chrome Extension can only display data for specific Amazon pages. Why not perform a search on one of the pages listed below.</p>
+                <div class="js-search-pages">
+                    <div class="js-search-results-page-col">
+                        <img class="js-search-results-page-img" src="" alt="Amazon Search Results" />
+                        <p>1. Amazon Search Results</p>
+                        <p>You can run the Chrome Extension against any Amazon search results page. Just enter a product or keyword into Amazon’s search bar and wait for the results to be displayed. Once there you are good to go!</p>
+                    </div>
+                    <div class="js-listing-page-img-col">
+                        <img class="js-listing-page-img" src="" alt="Amazon Product Listings" />
+                        <p>2. Amazon Product Listings</p>
+                        <p>For a more in depth look at a specific product you can run the Chrome Extension against an Amazon Product Listing page. This page can be accessed by selecting a product item from the Amazon search results page.</p>
+                    </div>
+                </div>
+                <p>The Chrome Extension will also collect data from <b>Amazon’s Wish Lists, Seller, Seller Storefront</b> and <b>Buying Guide pages</b></p>
+            </div>
+            <!-- End no products section -->
+        </div>
+        <!-- End the main screen -->
+    </div>
+    <!-- End content table section -->
+
+    <!-- Start the footer section -->
+    <footer class="footer">
+        <a href="#" id="extractResults">Extract Next Page &#x2023;</a>
+        <div class="center-footer">
+            <p>Showing results <span>-</span></p>
+        </div>
+        <div class="right-footer">
+            <a href="#" id="wordsCloudPopup" class="toTopToolTip toLeftToolTip" data-tooltip="Associated Keywords"><img src="" /></a>
+            <a href="#" id="trendPopup" class="toTopToolTip toLeftToolTip"><img src="" /></a>
+            <a href="#" id="sharePopup" class="toTopToolTip toLeftToolTip" data-tooltip="Share, Download or Export Table"><img src="" /></a>
+        </div>
+    </footer>
+    <!-- End the footer section -->
+</section>
+<!-- End the wrapper container section -->
+
+<!-- Start POPUPs -->
+<!-- Start product details on hover -->
+<div class="product-hover-container">
+    <img class="product-hover-img" src="" /> 
+    <p class="product-hover-name"></p>
+    <div class="product-hover-price"><span class="js-first-price-num"></span><span class="js-second-price-num"></span><i class="js-product-prime a-icon a-icon-prime a-icon-small"></i></div>
+    <div class="product-hover-rating">
+        <div class="product-rating-stars"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+        <span></span> <!-- Shows the number of reviews -->
+    </div>
+</div>
+<!-- End product details on hover -->
+
+<!-- Start the drawer menu -->
+<div class="js-drawer-menu">
+    <div class="js-drawer-wrapper"></div>
+</div>
+<!-- End the drawer menu -->
+
+<!-- Start share popup -->
+<div class="js-share-popup js-popup-box"></div>
+<!-- End share popup -->
+
+<!-- Start floating message -->
+<div class="js-floating-message js-popup-box">
+    <!-- Handle title -->
+    <h2></h2>
+    <span id="closeFloatMessage" class="close-popup-btn"><i class="close-popup-icon"></i></span>
+    <!-- Handle message -->
+    <div class="js-message-content"></div>
+</div>
+<!-- End floating message -->
+
+<!-- Adding parent products -->
+<div class="js-add-children-to-webapp-message js-popup-box">
+    <!-- Handle title -->
+    <h2>Whoops!</h2>
+    <span id="closeFloatAddingChildrenMessage" class="close-popup-btn"><i class="close-popup-icon"></i></span>
+    <!-- Handle message -->
+    <div class="js-message-content">
+        <p>This Parent product cannot be added to the tracker. Try adding one of its Children:</p>
+        <table class="js-track-children-products-table"></table>
+        <p>Or, view your products <a href="https://members.junglescout.com/#/tracker" target="_blank">here.</a></p>
+    </div>
+</div>
+<!-- End floating message or adding parent products -->
+
+<!-- Start product history section -->
+<div class="js-product-history-popup js-popup-box">
+    <h2></h2>
+    <img class="js-product-history-img" src="" />
+    <p class="js-product-history-name"></p>
+    <p class="js-chart-zoom-message">*Zoom out by double-clicking on the chart</p>
+    <div class="js-product-history-no-chart">
+        <img src="" />
+        <h3>Whoops!</h3>
+        <p>Unfortunately we don’t have enough product data at this time.</p>
+    </div>
+    <div class="js-product-history-chart"></div>
+    <span id="closeProductHistory" class="close-popup-btn"><i class="close-popup-icon"></i></span>
+
+</div>
+<!-- Start product history section -->
+
+<!-- Start words cloud section -->
+<div class="js-words-cloud-popup js-popup-box">
+    <h2><span style="margin-left: 15px;">Product Word Cloud</span></h2>
+    <span id="downloadWordsCloud" data-tooltip = "Download the Word Cloud to add these tags to your listing"><i class="download-popup-icon"></i></span>
+    <span id="closeWordsCloud" class="close-popup-btn"><i class="close-popup-icon"></i></span>
+    <div class="js-words-cloud-content"></div>
+    <div class="js-words-cloud-top-keywords"></div>
+</div>
+<!-- End words cloud section -->
+<!-- END POPUPs -->
+
+<!-- START SCREENSHOT TO FACEBOOK -->
+<img src="" style="display: none" class="js-watermark" />
+<!-- END SCREENSHOT TO FACEBOOK -->

@@ -1,0 +1,44 @@
+<!-- 
+    @Author: Mohammad M. AlBanna
+    Copyright © 2018 Jungle Scout
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login to Jungle Scout</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/libraries/jquery.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+		<!-- Start The Top Bar -->
+		<div class="top-menu-bar">
+			<div class="left-bar">
+				<a href="https://www.junglescout.com/"><img src="images/js-logo-top-menu.png" /></a>
+			</div>
+		</div>
+		<!-- End the top bar -->
+
+		<!-- The container -->
+		<div class="container">
+			<a href="https://www.junglescout.com/" target="_blank"><img class="jsLogo" src="images/js-white.png" /></a>
+			<p class="login-message">Log in to your Jungle Scout account!</p>
+
+			<form id="jsLoginForm">
+				<label class="form-element" for="username">Email</label>
+				<input class="form-input-element" placeholder="example@gmail.com" type="text" id="username" name="username" />
+				<br/>
+				<label class="form-element" for="password">Password</label>
+				<input class="form-input-element" id="password" placeholder="Password" type="password" name="password" />
+				<p class="note-message">Forgot your password? Reset it <a href="https://members.junglescout.com/users/password/new" target="_blank">here</a>.</p>
+				<a id="submit" class="sign-btn" href="#"><span>Sign In to your Account <i class="right-arrow"></i></span></a>
+			</form>
+
+			<p class="message"></p>
+			<p class="note-message no-account">Don't have an account? Click <a href="https://www.junglescout.com" target="_blank">here</a>.</p>
+		</div>
+		<!-- End the cotnainer -->
+	</body>
+</html>

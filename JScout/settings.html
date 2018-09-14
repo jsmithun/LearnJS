@@ -1,0 +1,140 @@
+<!-- 
+    @Author: Mohammad M. AlBanna
+    Copyright © 2018 Jungle Scout
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jungle Scout | Settings</title>
+		<link rel="stylesheet" href="css/settings.css" />
+		<script type="text/javascript" src="js/libraries/jquery.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+		<!-- Start The Top Bar -->
+		<div class="top-menu-bar">
+			<div class="left-bar">
+				<a href="https://www.junglescout.com/"><img src="images/js-logo-top-menu.png" /></a>
+			</div>
+		</div>
+		<!-- End the top bar -->
+
+		<!-- JS main logo -->
+		<div class="logo-container">
+			<a href="https://www.junglescout.com/" target="_blank"><img src="images/js-white.png" /></a>
+		</div>
+		
+		<!-- End JS main logo -->
+		
+		<!-- Start settings main container -->
+		<div class="settings-container">
+			<h2>Jungle Scout Settings</h2>
+			<p class="description">Through the Jungle Scout Extension, you are fully able to update and modify various areas of the plug-in. However it should be kept in mind that once a Reset or Clear has been applied, the action will not be able to be reversed. </p>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input class="dont-touch" name="selectAllSettings" id="selectAllSettings" type="checkbox" />
+						    	<span></span>
+							</label>
+						</td>
+						<td><label for="selectAllSettings">Select All</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input class="dont-touch" name="unSelectAllSettings" id="unSelectAllSettings" type="checkbox" />
+						    	<span></span>
+							</label>
+						</td>
+						<td><label for="unSelectAllSettings">Unselect All</label></td>
+					</tr>
+					<tr>
+						<td><br/></td>
+						<td><br/></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input disabled id="clearAPIKeys" name="clearAPIKeys" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label class="gray-text" for="clearAPIKeys">Clear API Keys (Pro Only)</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input id="clearCache" name="clearCache" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label for="clearCache">Clear Cache</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input disabled id="resetPopupDimensions" name="resetPopupDimensions" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label class="gray-text" for="resetPopupDimensions">Reset Popup Dimensions (Pro Only)</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input disabled id="resetPopupPosition" name="resetPopupPosition" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label class="gray-text" for="resetPopupPosition">Reset Popup Position (Pro Only)</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input disabled id="resetActiveColumns" name="resetActiveColumns" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label class="gray-text" for="resetActiveColumns">Reset Active Columns (Pro Only)</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input id="clearLastScreenshot" name="clearLastScreenshot" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label for="clearLastScreenshot">Clear Last Screenshot</label></td>
+					</tr>
+					<tr>
+						<td>
+							<label class="jsCheckbox">
+						    	<input id="clearLoginCredential" name="clearLoginCredential" type="checkbox">
+						    	<span></span>
+							</label>
+						</td>
+						<td><label for="clearLoginCredential">Clear Login Credential</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<p class="gray-text">* Warning, this will log you out of Jungle Scout.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a id="submit" class="gray-btn"><span>Apply Changes</span></a>
+		</div>
+		<!-- End container -->
+
+		<!-- Underneath section -->
+		<div class="underneath-text">
+			<p class="note-message">Haven’t Purchased Jungle Scout yet? Sign Up <a href="https://www.junglescout.com/" target="_blank">here</a>.</p>
+		</div>
+		<!-- End underneath section -->
+	</body>
+</html>

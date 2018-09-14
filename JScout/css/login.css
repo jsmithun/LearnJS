@@ -1,0 +1,234 @@
+/*
+ * @Author: Mohammad M. AlBanna
+ * Copyright © 2018 Jungle Scout
+*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+html{
+	height: 100%;
+	background-color: #f5f7f8
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans-Regular.otf);
+}
+
+@font-face {
+    font-family: WorkSansMedium;
+    src: url(../fonts/WorkSans-Medium.otf);
+}
+
+@font-face {
+    font-family: WorkSansSemiBold;
+    src: url(../fonts/WorkSans-SemiBold.otf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.top-menu-bar{
+	display: block;
+	height: 50px;
+	background: linear-gradient(to bottom, #ff9c00 0%, #ff9100 100%);
+	padding: 10px 0px;
+}
+
+.top-menu-bar .left-bar{
+	width: 940px;
+	margin: auto;
+}
+
+.left-bar img{
+	height: 30px;
+}
+
+.logo-container{
+	margin-top: 45px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.container{
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.jsLogo{
+	margin-top: 45px;
+	margin-bottom: 40px;
+}
+
+.login-message{
+	font-family: WorkSans;
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	color: #516670;
+	margin: 0px 0px 41px 0px;
+}
+
+form {
+	display: inline-block;
+}
+
+form label{
+	display: block;
+	font-family: WorkSansMedium;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.35;
+	letter-spacing: -0.2px;
+	text-align: left;
+	color: #516670;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],form input[type="password"]{
+	width: 295px;
+	height: 30px;
+	border-radius: 1px;
+	background-color: #ffffff;
+	border: solid 1px #cfd8dc;
+	padding: 5px;
+	display: block;
+	color: #516670;
+	font-family: WorkSans;
+	font-size: 12px;
+	line-height: 1.25;
+	letter-spacing: -0.2px;
+	text-align: left;
+}
+
+.form-element.error{
+	color: #ed455a;
+}
+
+.form-input-element.error{
+	color: #ed455a;
+	border: solid 1px #ed455a;
+}
+
+::-webkit-input-placeholder {
+   color: #516670;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus{
+	border: solid 1px #516670;
+	outline: 0;
+}
+
+.note-message{
+	font-family: WorkSans;
+	font-size: 12px;
+	line-height: 1.36;
+	text-align: left;
+	color: #516670;
+}
+
+.note-message a{
+	color: #516670;
+	font-family: WorkSansSemiBold;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.25;
+	text-align: left;
+}
+
+.sign-btn{
+	margin-top: 71px;
+	width: 250px;
+	height: 30px;
+	border-radius: 2px;
+	border: solid 1.5px #ff9100;
+	font-family: WorkSansSemiBold;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: -0.2px;
+	text-align: center;
+	color: #ff9100;
+	padding: 6px 15px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.sign-btn i.right-arrow{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-image: url("../images/icons/button-arrow-active.png");
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 1px;
+}
+
+.sign-btn:hover{
+	background-color: rgba(255, 145, 0, 0.1);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+	transition: all 0.3s;
+}
+
+.sign-btn.js-gray-btn{
+	color: #cfd8dc;
+	border: solid 1.5px #cfd8dc;
+}
+
+.sign-btn.js-gray-btn i.right-arrow{
+	background-image: url("../images/icons/button-arrow-deactive.png");
+}
+
+.message{
+	visibility: hidden;
+	margin: 10px 0px 0px 0px;
+	font-family: WorkSans;
+	font-size: 11px;
+	line-height: 1.36;
+	text-align: center;
+	color: #cfd8dc;
+	height: 15px;
+}
+
+.no-account{
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* Button status */
+.js-processing-btn {
+  animation-name: spinning-circle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  width: 15px;
+  height: 15px;
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+}
